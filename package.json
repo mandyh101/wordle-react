@@ -5,7 +5,11 @@
   "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon"
+    "build": "webpack --config client/webpack.config.js",
+    "start": "node server",
+    "dev": "run-p dev:client dev:server",
+    "dev:client": "npm run build -- --watch",
+    "dev:server": "nodemon server"
   },
   "repository": {
     "type": "git",

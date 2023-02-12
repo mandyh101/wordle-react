@@ -1,5 +1,6 @@
 // import './App.css'
 import { useState, useEffect } from 'react'
+import Wordle from './components/Wordle'
 
 function App() {
   const [guessedWord, setGuessedWord] = useState('SUPER')
@@ -39,7 +40,7 @@ function App() {
     // </div>
     <div>
       <h1>Wordle</h1>
-      <p>{wordle}</p>
+      <Wordle wordle={wordle} />
     </div>
   )
 }

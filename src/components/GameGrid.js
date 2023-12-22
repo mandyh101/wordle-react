@@ -1,9 +1,9 @@
 import React from 'react'
 
 // components
-import GameRow from './Row'
+import GameRow from './GameRow'
 
-export default function Grid({ guesses, currentGuess, turn }) {
+export default function GameGrid({ guesses, currentGuess, turn }) {
   return (
     <div>
       {guesses.map((g, i) => {

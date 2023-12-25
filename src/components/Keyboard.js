@@ -1,6 +1,10 @@
-import React from 'react'
+import { React } from 'react'
+import { useState } from 'react'
 
 const KeyboardComponent = () => {
+  // state variables
+  let [currentTile, setCurrentTile] = useState(0)
+
   const keys = [
     'Q',
     'W',
